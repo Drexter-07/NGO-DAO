@@ -99,7 +99,7 @@ function App() {
                             color: '#333'
                         }}>
                             <h2 style={{ fontSize: '1.5em' }}>Name: {orphan.name}</h2>
-                            <p style={{ fontSize: '1em' }}>Gender: {orphan.details}</p>
+                            <p style={{ fontSize: '1em' }}>Details: {orphan.details}</p>
                             <p style={{ fontSize: '0.8em', marginBottom: '15px' }}>Orphan's Wallet address: {orphan.wallet}</p>
                             <input type="number" step="0.01" placeholder="Amount to donate in MATIC" id={`amount${index}`} style={{ marginBottom: '10px', padding: '5px', fontSize: '1em', width: '100%' }} />
                             <button onClick={() => donate(index, document.getElementById(`amount${index}`).value)} style={{ padding: '10px', fontSize: '1em', cursor: 'pointer', backgroundColor: '#4CAF50', color: 'white', border: 'none', borderRadius: '5px' }}>Donate</button>
